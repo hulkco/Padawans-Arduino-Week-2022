@@ -26,7 +26,7 @@ Con los cuales, se pueden crear una muy buena cantidad de aplicaciones/solucione
 
 En cuanto a la parte de ver/mostrar los datos, se usara App Inventor, el por que de esto, es muy sencillo, la rapidez de crear apps moviles sin necesidad de tener conocmientos bastos en programcion, como un servidor 
 
-:sparkle: :+1: :octocat: :;):
+:wink:
 
 Objetivo.
 Crear una solución BLE (Bluetooth Low Energy) basada en Arduino y App Inventor, para operar un grupo de leds RGB (Neopixeles)
