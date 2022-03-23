@@ -24,10 +24,23 @@ Con los cuales, se pueden crear una muy buena cantidad de aplicaciones/solucione
 
 ![App](http://appinventor.mit.edu/explore/sites/all/files/ai2tutorials/wheresMyCar/WheresMyCarDesign.png)
 
-En cuanto a la parte de ver/mostrar los datos, se usara App Inventor, el por que de esto, es muy sencillo, la rapidez de crear apps moviles sin necesidad de tener conocmientos bastos en programcion, como un servidor 
+En cuanto a la parte de ver/mostrar los datos, se usara App Inventor, el por que de esto, es muy sencillo, la rapidez de crear apps moviles sin necesidad de tener conocmientos bastos en programcion, como un servidor :wink:.
 
-:wink:
-
-Objetivo.
+##Objetivo del taller.
 Crear una solución BLE (Bluetooth Low Energy) basada en Arduino y App Inventor, para operar un grupo de leds RGB (Neopixeles)
+
+### 1.Parte
+Elementos de una Aplicación BLE.
+
+Solo mencionare de forma breve dichos elementos, ya que el objetivo del taller es ver solo la parte practica, para profundizar, pueden ir a l apagina de la libreria [ArduinoBLE](https://www.arduino.cc/reference/en/libraries/arduinoble/).
+
+```
+1. Biblioteca
+
+```
+	
+
+
+
+
 
