@@ -15,6 +15,7 @@ void rainbow(int wait)
     {
         for (int i = 0; i < strip.numPixels(); i++)
         { 
+            int pixelHue = firstPixelHue + (i * 65536L / strip.numPixels());
             strip.setPixelColor(i, strip.gamma32(strip.ColorHSV(pixelHue)));
         }
         strip.setBrightness(200);

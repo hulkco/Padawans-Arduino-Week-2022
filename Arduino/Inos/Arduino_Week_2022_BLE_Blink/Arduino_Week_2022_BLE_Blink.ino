@@ -1,9 +1,7 @@
 /*
   LED
-
-  Este ejemplo crea un periférico BLE con un Servicio que contiene una
-  característica para controlar un LED.
-
+    Este ejemplo crea un periférico BLE con un Servicio que contiene una
+    característica para controlar un LED.
   This example code is in the public domain.
 */
 // Biblioteca BLE
@@ -18,7 +16,7 @@ BLEByteCharacteristic switchCharacteristic("19B10001-E8F2-537E-4F6C-D104768A1214
 // Pin asignado al servicio "LED"
 const int ledPin = 2; 
 
-//Inicia funcion "SETUP"
+//Inicia función "SETUP"
 void setup() {
   Serial.begin(9600); //Iniciamos el servicio de "escucha en la consola serial."  
 
@@ -37,22 +35,22 @@ void setup() {
   BLE.setLocalName("LED");
   BLE.setAdvertisedService(ledService);
 
-  // añadir la característica al servicio
+  // Añadir la característica al servicio
   ledService.addCharacteristic(switchCharacteristic);
 
-  // añadir el servicio
+  // Añadir el servicio
   BLE.addService(ledService);
 
   // establecer el valor inicial para la característica:
   switchCharacteristic.writeValue(0);
 
-  // iniciar el advertising (anunciar el servicio)
+  // iniciar a anunciar el servicio
   BLE.advertise();
   // imprime en consola
   Serial.println("BLE LED Peripheral");
 }
 
-// Inicia la funcion LOOP
+// Inicia la función LOOP
 void loop() {
   // Esperando conexiones
   BLEDevice central = BLE.central();
