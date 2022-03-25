@@ -56,12 +56,20 @@ Elementos de una aplicacion BLE en Arduino
 ```
 1. Estructura de un aplicación BLE
 
-	Bliblioteca
-	Identificador
-	Caracteristica
+```
+
+```C++
+	// Biblioteca BLE
+	#include <ArduinoBLE.h>
+
+	// Identificador (UUID) del servicio BLE "LED"
+	BLEService ledService("19B10000-E8F2-537E-4F6C-D104768A1214");
+ 
+	// Característica switchCharacteristic del servicio BLE "LED", usa un "UUID" 	personalizado de 128 bits, lectura y escritura centralizada
+	BLEByteCharacteristic switchCharacteristic("19B10001-E8F2-537E-4F6C-	D104768A1214", BLERead | BLEWrite);
+
 	
-	Setup
-	```C++
+	Setup	
 	// Se establece el nombre y el servicio local a anunciarse.
   	BLE.setLocalName("LED");
   	BLE.setAdvertisedService(ledService);
@@ -77,11 +85,12 @@ Elementos de una aplicacion BLE en Arduino
 
   	// iniciar a anunciar el servicio
   	BLE.advertise();
-  	```
+  	
 	Loop
 
-
 ```
+
+
 ```C++
 // Biblioteca BLE
 #include <ArduinoBLE.h>
