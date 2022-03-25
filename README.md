@@ -56,6 +56,31 @@ Elementos de una aplicacion BLE en Arduino
 ```
 1. Estructura de un aplicación BLE
 
+	Bliblioteca
+	Identificador
+	Caracteristica
+	
+	Setup
+	```C++
+	// Se establece el nombre y el servicio local a anunciarse.
+  	BLE.setLocalName("LED");
+  	BLE.setAdvertisedService(ledService);
+
+  	// Añadir la característica al servicio
+  	ledService.addCharacteristic(switchCharacteristic);
+
+  	// Añadir el servicio
+  	BLE.addService(ledService);
+
+  	// establecer el valor inicial para la característica:
+  	switchCharacteristic.writeValue(0);
+
+  	// iniciar a anunciar el servicio
+  	BLE.advertise();
+  	```
+	Loop
+
+
 ```
 ```C++
 // Biblioteca BLE
