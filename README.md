@@ -104,3 +104,7 @@ Los servicios se identifican mediante números únicos conocidos como UUID ([gen
 ### 2.Parte 
 
 **Elementos de la Aplicación movil con App Inventor.** 
+
+**Parte grafica**
+
+**Parte programación**
