@@ -45,7 +45,9 @@ La aplicación, necesita de dos dispositivos, cada uno de ellos deberá cumplir 
 
 **Centrales:** Los dispositivos centrales son clientes. leen y escriben datos de dispositivos periféricos.  
 
-**Periféricos:** Los dispositivos periféricos son servidores. Proporcionan datos de sensores como características legibles y proporcionan la capacidad de lectura/escritura para controlar actuadores como motores, luces, etc.  
+**Periféricos:** Los dispositivos periféricos son servidores. Proporcionan datos de sensores como características legibles y proporcionan la capacidad de lectura/escritura para controlar actuadores como motores, luces, etc.
+
+![BLE Model](images/ble-bulletin-board-model.png)  
 
 **Servicios, características y UUID**   
 
